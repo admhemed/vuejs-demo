@@ -14,9 +14,27 @@
                 name="search"
                 placeholder="Search Companies">
         </a></li>
-        <li><a href="">Habits</a></li>
-        <li><a href="">Trained Cats</a></li>
-        <li><a href="">Usefulness of Cats</a></li>
+        <li>Or</li>
+        <li><a href="" class="button">New Smartlist</a></li>
+        <li>
+            <a href="" class="dropdown">Products</a>
+            <a href="" class="dropdown">Alert</a>
+            <a href="" class="dropdown">Learn</a>
+        </li>
+        <li class="pull-right">
+            <a href="">
+              <img
+                      src="../images/default.png"
+                      srcset="../images/default@2x.png 2x,../images/default@3x.png 3x"
+                      class="chrome-logo">
+            </a>
+            <a href="" class="dropdown group-copy">
+              <img
+                      src="../images/group-copy.png"
+                      srcset="../images/group-copy@2x.png 2x,../images/group-copy@3x.png 3x"
+                      >
+            </a>
+        </li>
       </ul>
     </nav>
 </template>

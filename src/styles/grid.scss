@@ -6,8 +6,8 @@
     grid-template-rows: auto ;
   }
 
-  .topnav {
-    grid-column: 1 / 2;
+  .breadcrumbs {
+    grid-column: 1 / 4;
     grid-row: 1 / 2;
   }
 
@@ -32,8 +32,8 @@
     grid-template-rows: auto ;
   }
 
-  .topnav {
-    grid-column: 1 / 2;
+  .breadcrumbs {
+    grid-column: 1 / 4;
     grid-row: 1 / 2;
   }
 
@@ -57,12 +57,10 @@
     max-width: 960px;
   }
 
-  .topnav {
+  .breadcrumbs {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
   }
-
-
 
   .content {
     grid-column: 3 / 4;

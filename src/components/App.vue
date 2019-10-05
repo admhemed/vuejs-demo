@@ -1,8 +1,10 @@
 <template>
   <body>
+  <top-nav/>
   <div class="wrapper">
 
-    <top-nav/>
+
+    <breadcrumbs/>
 
     <div class="content">
 
@@ -28,9 +30,11 @@
 
 <script>
   import TopNav from 'Components/TopNav.vue';
+  import Breadcrumbs from 'Components/Breadcrumbs.vue';
   export default {
     components: {
-      TopNav
+      TopNav,
+      Breadcrumbs
     },
     name: 'App'
   };
