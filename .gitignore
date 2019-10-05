@@ -4,4 +4,5 @@ node_modules/
 build/
 .vscode
 .env
+.idea
 package-lock.json

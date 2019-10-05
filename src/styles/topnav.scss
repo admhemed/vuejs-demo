@@ -1,0 +1,27 @@
+.topnav {
+  background-color: plum;
+  ul {
+    margin: 0;
+  }
+  li {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+}
