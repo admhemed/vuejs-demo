@@ -1,10 +1,13 @@
 :root {
   --darkslateblue: #394783;
+  --darkslategray: #505050;
   --midnightblue: #1f2b5a;
   --slategray: #5d699a;
   --gray: #7e7e7e;
+  --gainsboro: #d4d9e3;
 }
 @import './common';
 @import './grid.scss';
 @import './topnav.scss';
 @import './breadcrumbs.scss';
+@import './leftnav.scss';
