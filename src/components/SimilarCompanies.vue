@@ -1,6 +1,6 @@
 <template>
     <div class="similar-companies">
-        similar companies
+
     </div>
 </template>
 

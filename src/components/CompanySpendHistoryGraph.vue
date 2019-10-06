@@ -1,6 +1,5 @@
 <template>
     <div class="company-spend-history-graph">
-        company spend history graph
     </div>
 </template>
 

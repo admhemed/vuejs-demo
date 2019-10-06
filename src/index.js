@@ -4,6 +4,11 @@ import Vue from 'vue/dist/vue.min.js';
 import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
+
+import Vuex from 'vuex';
+
+Vue.use(Vuex);
+
 Vue.config.productionTip = false;
 
 import TopNav from 'Components/TopNav.vue';
@@ -11,6 +16,7 @@ import Breadcrumbs from 'Components/Breadcrumbs.vue';
 import LeftNav from 'Components/LeftNav.vue';
 import CompanyPage from 'Components/CompanyPage.vue';
 import CompanyData from 'Components/CompanyData.vue';
+import Footer from 'Components/Footer.vue';
 
 
 const router = new VueRouter({
@@ -38,7 +44,8 @@ const app = new Vue({
 	components: {
 		TopNav,
 		Breadcrumbs,
-		LeftNav
+		LeftNav,
+		FooterComponent: Footer
 	},
 	name: 'App',
 	router,

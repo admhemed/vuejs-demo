@@ -1,2 +1,42 @@
 .activities {
+  * {
+    box-sizing: border-box;
+  }
+  .activity {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 70.6px;
+    border-bottom: 1px solid var(--gainsboro);
+    .days-ago {
+      color: var(--darkgray);
+
+      width: 26%;
+      padding: 15px 5px 0 10px;
+      font-size: 0.9em;
+    }
+    .activity-image {
+      width: 10%;
+      padding-top: 12px;
+    }
+    .statement {
+      width: 64%;
+      font-size: 1.1em;
+      padding-top: 15px;
+      .strike-through {
+        text-decoration: line-through;
+        text-transform: capitalize;
+        color: var(--darkgray);
+      }
+      .subject-company {
+        text-transform: capitalize;
+        text-decoration: none;
+        color: var(--slategray);
+      }
+      .number-of-properties{
+        text-decoration: none;
+        color: var(--slategray);
+      }
+    }
+  }
 }

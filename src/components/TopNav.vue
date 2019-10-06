@@ -5,7 +5,7 @@
             <img
                     src="../images/logo-pink.png"
                     srcset="../images/logo-pink@2x.png 2x,../images/logo-pink@3x.png 3x"
-                    class="logo">
+            >
         </a></li>
         <li><a href="">
             <input

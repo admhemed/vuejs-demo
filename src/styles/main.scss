@@ -8,6 +8,7 @@
   --lavender: #e7e9f3;
   --dimgray: #676767;
   --darkslategray2: #333333;
+  --darkgray: #9b9b9b;
 }
 @import './common';
 @import './grid.scss';
@@ -23,3 +24,4 @@
 @import './company-data.scss';
 @import './company-data-modal.scss';
 @import './card.scss';
+@import './footer.scss';
