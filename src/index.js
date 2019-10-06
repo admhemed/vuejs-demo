@@ -9,6 +9,9 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
+import { store } from './store'
+
+
 Vue.config.productionTip = false;
 
 import TopNav from 'Components/TopNav.vue';
@@ -23,7 +26,7 @@ const router = new VueRouter({
 	routes: [
 		{
 			path: '/',
-			name: 'Company Page',
+			name: 'Home Page',
 			component: CompanyPage
 		},
 		{
@@ -49,4 +52,5 @@ const app = new Vue({
 	},
 	name: 'App',
 	router,
+	store,
 }).$mount('#app');

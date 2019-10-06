@@ -9,7 +9,8 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 require('dotenv').config();
 
 function isProduction() {
-  return process.env.NODE_ENV === 'production';
+  // return process.env.NODE_ENV === 'production';
+  return false;
 }
 
 module.exports = {
