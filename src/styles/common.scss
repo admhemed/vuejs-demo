@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #efefef;
+  background-color: var(--lavender);
   font: 87.5%/1.4 HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -10,17 +10,6 @@ img {
   max-width: 100%;
   display: block;
   height: auto;
-}
-
-figure {
-  margin: 0;
-  padding: 0;
-}
-
-figcaption {
-  font-family: "Georgia","Times New Roman",serif;
-  text-align: center;
-  padding: 0.5em 0 1em 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,27 +40,6 @@ p {
 }
 
 .wrapper {
-  background-color: #fff;
-  color: #444;
   padding: 1em 3% 1em 3%;
   margin: 0 auto 1em auto;
-
-}
-
-.mainnav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 120%;
-}
-
-.mainnav a:link, .mainnav a:visited {
-  text-decoration: none;
-  color: #444;
-}
-
-.quote {
-  font: 150%/1.4 "Georgia","Times New Roman",serif;
-  padding: 0;
-  margin: 0;
 }

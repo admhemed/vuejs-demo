@@ -1,2 +1,51 @@
 .company-page-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  color: var(--darkslategray2);
+  font-weight: 500;
+  .microsoft-icon {
+    padding: 17px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 2px 3px 1px rgba(30, 30 , 30, 0.2);
+  }
+
+  .microsoft-title {
+    width: -webkit-calc(100% - 70px);
+    width: -moz-calc(100% - 70px);
+    width: calc(100% - 70px);
+
+    box-sizing: border-box;
+    padding-left: 20px;
+
+    font-size: 2.3em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.1em;
+
+    span {
+      font-size: 0.5em;
+      font-weight: 500;
+      letter-spacing: 0;
+      color: var(--dimgray);
+      padding-left: 15px;
+      background-image:
+              image-set( '../images/location.png' 1x,
+                      '../images/location@2x.png' 2x,
+                      '../images/location@3x.png' 3x);
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+
+  }
+
+  .microsoft-description {
+    padding: 20px 0;
+    width: 100%;
+    a, a:visited {
+      color: var(--slategray);
+    }
+  }
 }

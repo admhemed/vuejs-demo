@@ -6,14 +6,22 @@
         <!-- /.top -->
 
         <div class="left">
-            <activities/>
+            <card title="Activities">
+                <activities/>
+            </card>
         </div>
         <!-- /.left -->
 
         <div class="right">
-            <similar-companies/>
-            <company-spend-history-graph/>
-            <company-spend-history-list/>
+            <card title="Similar Companies">
+                <similar-companies/>
+            </card>
+            <card title="Company Spend History">
+                <company-spend-history-graph/>
+            </card>
+            <card title="Company Spend History">
+                <company-spend-history-list/>
+            </card>
         </div>
         <!-- /.right -->
 
@@ -26,6 +34,7 @@
 	import SimilarCompanies from 'Components/SimilarCompanies.vue';
 	import CompanySpendHistoryGraph from 'Components/CompanySpendHistoryGraph.vue';
 	import CompanySpendHistoryList from 'Components/CompanySpendHistoryList.vue';
+	import Card from 'Components/Card.vue';
 
 	export default {
 		name: 'CompanyPage',
@@ -34,7 +43,8 @@
             Activities,
             SimilarCompanies,
             CompanySpendHistoryGraph,
-            CompanySpendHistoryList
+            CompanySpendHistoryList,
+            Card
         }
 	};
 </script>

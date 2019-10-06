@@ -5,6 +5,9 @@
   --slategray: #5d699a;
   --gray: #7e7e7e;
   --gainsboro: #d4d9e3;
+  --lavender: #e7e9f3;
+  --dimgray: #676767;
+  --darkslategray2: #333333;
 }
 @import './common';
 @import './grid.scss';
@@ -19,3 +22,4 @@
 @import './company-spend-history-list.scss';
 @import './company-data.scss';
 @import './company-data-modal.scss';
+@import './card.scss';
