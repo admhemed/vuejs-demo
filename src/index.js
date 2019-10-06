@@ -9,10 +9,8 @@ Vue.config.productionTip = false;
 import TopNav from 'Components/TopNav.vue';
 import Breadcrumbs from 'Components/Breadcrumbs.vue';
 import LeftNav from 'Components/LeftNav.vue';
-
-const CompanyPage = {template: '<div>foo</div>'};
-const CompanyData = {template: '<div>bar</div>'};
-
+import CompanyPage from 'Components/CompanyPage.vue';
+import CompanyData from 'Components/CompanyData.vue';
 
 
 const router = new VueRouter({
