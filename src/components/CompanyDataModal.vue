@@ -1,6 +1,6 @@
 <template>
-    <div class="company-data-modal" v-bind:style="{ display: modalState? 'block' : 'none' }">
-        <div class="modal-content">
+    <div class="company-data-modal" @click="dismiss" v-bind:style="{ display: modalState? 'block' : 'none' }">
+        <div class="modal-content" @click="$event.stopPropagation()">
                 <form>
                     <div class="form-group">
                         <div class="label">Additional Notes</div>
@@ -22,7 +22,7 @@
 
 	export default {
 		name: 'CompanyDataModal',
-        props: ['notes', 'modalState', 'setNotes'],
+        props: ['notes', 'modalState', 'setNotes', 'dismiss'],
         methods: {
 			setNotesLocal(value) {
 				this.localNotes = value;
@@ -34,6 +34,9 @@
 			},
 			save() {
 				this.setNotes(this.localNotes);
+            },
+			dismiss() {
+				this.dismiss();
             }
         }
 	};

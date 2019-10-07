@@ -33,6 +33,7 @@
                         id="company-spend"
                         :value="companySpend"
                         @change="setCompanySpend($event.target.value)"
+                        @blur="addCurrencySign"
                         type="text"
                         name="company-spend"
                         placeholder="e.g. $150,000"
@@ -69,7 +70,7 @@
                 ></textarea>
             </div>
 
-            <CompanyDataModal :notes="notes" :modal-state="modalState" :set-notes="setNotes" />
+            <CompanyDataModal :notes="notes" :modal-state="modalState" :set-notes="setNotes" :dismiss="dismissModal" />
         </form>
     </div>
 </template>
@@ -108,7 +109,15 @@
 				console.log('notesClick');
 
 				this.modalState = true;
-			}
+			},
+            dismissModal() {
+			    this.modalState = false;
+            },
+            addCurrencySign() {
+				if (this.companySpend && this.companySpend.slice(0, 1) !== '$') {
+					this.companySpend = '$' + this.companySpend;
+                }
+            }
         },
 		validations: {
 			companyName: {
@@ -130,7 +139,7 @@
 				companySpend: null,
 				companySpendAbility: null,
                 notes: '',
-                modalState: true
+                modalState: false
 			};
 		},
         components: {
