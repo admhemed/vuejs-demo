@@ -23,34 +23,20 @@
 </template>
 
 <script>
+	import {activityToHTML, activityToNumberOfDaysPhrase} from "../factored-out-functions/activity-to-phrase";
+
 	export default {
 		name: 'Activities',
 		methods: {
 			getImgUrl(pic) {
-				var images = require.context('../images/', false, /\.png$/)
-				return images('./' + pic + ".png")
+				const images = require.context('../images/', false, /\.png$/);
+				return images(`./${pic}.png`);
 			},
 			activityFirstPhrase: activity => {
-				return `${activity.numberOfDays} days ago`;
+				return activityToNumberOfDaysPhrase(activity);
 			},
 			activitySecondPhrase: activity => {
-				let subjectCompany;
-				if (activity.subjectCompanyUrl) {
-					subjectCompany = `<a class="subject-company" href="${activity.subjectCompanyUrl}">${activity.subjectCompany}</a>`;
-				} else {
-					subjectCompany = activity.subjectCompany
-				}
-				let objectCompany;
-				if (activity.objectCompanyStyle) {
-					objectCompany = `<span class="${activity.objectCompanyStyle}">${activity.objectCompany}</span>`;
-				} else {
-					objectCompany = activity.objectCompany
-				}
-				let numberOfPropertyStatements = '';
-				if (activity.numberOfProperties) {
-					numberOfPropertyStatements = `on <a class="number-of-properties" href='#'>${activity.numberOfProperties} ${activity.numberOfProperties > 1 ? 'properties' : 'property'}</a>`;
-				}
-				return `${subjectCompany} ${activity.verb} ${objectCompany} ${numberOfPropertyStatements}`;
+				return activityToHTML(activity);
 			}
 		},
 		computed: {

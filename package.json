@@ -15,12 +15,24 @@
     "test": "node_modules/.bin/jest",
     "start": "npm run dev"
   },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      ".*\\.(vue)$": "vue-jest",
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "vue": "2.6.8",
     "vue-router": "^3.0.1",
+    "vuelidate": "^0.7.4",
     "vuex": "^3.1.1"
   },
   "devDependencies": {
@@ -30,6 +42,7 @@
     "babel-core": "^6.26.3",
     "babel-jest": "^23.6.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-require-context-hook": "^1.0.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",

@@ -34,6 +34,7 @@
 	import SimilarCompanies from 'Components/SimilarCompanies.vue';
 	import CompanySpendHistoryGraph from 'Components/CompanySpendHistoryGraph.vue';
 	import CompanySpendHistoryList from 'Components/CompanySpendHistoryList.vue';
+
 	import Card from 'Components/Card.vue';
 
 	export default {

@@ -1,3 +1,32 @@
 .company-data {
-
+  border: 1px solid var(--gainsboro);
+  border-radius: 3px;
+  background-color: white;
+  padding: 25px;
+  color: var(--darkslategray);
+  .form-group {
+    margin-top: 15px;
+  }
+  input, textarea {
+    box-shadow: 0 0 2px 1px rgba(30, 30, 30, 0.08);
+    border: 1px solid var(--gainsboro);
+    border-radius: 3px;
+    padding: 10px;
+    width: 50%;
+    &::placeholder {
+      color: var(--lightgray);
+    }
+  }
+  textarea {
+    width: 80%;
+    height: 160px;
+    resize: none;
+  }
+  label{
+    color: var(--darkgray2);
+    text-transform: uppercase;
+    margin-bottom:8px;
+    font-size: 0.85em;
+    font-weight: 500;
+  }
 }

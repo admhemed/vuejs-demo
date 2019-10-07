@@ -1,5 +1,5 @@
 import 'Styles/main.scss';
-import Vue from 'vue/dist/vue.min.js';
+import Vue from 'vue/dist/vue.js';
 
 import VueRouter from 'vue-router';
 

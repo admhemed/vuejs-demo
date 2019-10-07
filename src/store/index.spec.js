@@ -1,7 +1,6 @@
 import Vuex from 'vuex';
 import {getters} from './index';
 import { createLocalVue } from '@vue/test-utils';
-import cloneDeep from 'lodash.clonedeep';
 import {activities} from "./data";
 
 const localVue = createLocalVue();
